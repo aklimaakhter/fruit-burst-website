@@ -2,48 +2,164 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FRUIT BURST WEBSITE</title>
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <!-- tailwind and daisy ui cdn link -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google fonts link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- Font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- custom background Image -->
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FRUIT BURST WEBSITE</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <!-- tailwind and daisy ui cdn link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- Font awesome cdn link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom background Image -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
-    <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-    <header>
+<body class="font-lato max-w-screen-xl mx-auto">
+  <header>
+    <!-- navbar start here -->
+    <nav class=" px-8 md:px-16 lg:px-24 py-5 ">
+      <div class="navbar bg-red-400  rounded-full p-6">
+        <div class="navbar-start">
 
-    </header>
-    <main>
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </label>
+            <ul tabindex="0" class=" flex space-x-3 text-white font-medium text-xl">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar-center ">
+          <a class="btn btn-ghost normal-case text-xl">
+            <img src="./images/logo.png" alt="">
+            <p class="text-white">Fruit Burst</p>
+          </a>
+        </div>
+        <div class="navbar-end">
+          <div class="form-control">
+            <input type="text" placeholder="Search "
+              class="input input-bordered rounded-full w-24 md:w-auto relative" />
+            <i class="fa-solid fa-magnifying-glass absolute top-16 right-40 block"></i>
 
-    </main>
-    <footer>
+          </div>
+          <!-- <button class="btn btn-ghost btn-circle">
+            <input type="text" placeholder="Search here ">
+            
+          </button> -->
+          <!-- <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
+              <span class="badge badge-xs badge-primary indicator-item"></span>
+            </div>
+          </button> -->
+        </div>
+      </div>
+    </nav>
+    <!-- Banner start here -->
+   <div class="">
+    <div class="relative px-8 md:px-16 lg:px-24">
+      <div class="  py-4">
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full">
+            <img src="./images/banner1.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
 
-    </footer>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="./images/banner2.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="./images/banner3.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="./images/banner4.png" class="w-full" />
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center  absolute inset-x-0 top-36 space-y-5">
+        <h1 class=" text-2xl md:text-4xl text-white">Exotic tastes at <br> your doorstep</h1>
+        <p class="text-white">We supply highly quality organic products</p>
+        <button class="btn bg-[#F85559] text-white Class
+        Properties
+        border-0">Shop Now</button>
+      </div>
+    </div>
+    <div class="flex items-center justify-between bg-white max-w-screen-lg mx-auto 	rounded-lg px-10 py-5 invisible lg:visible  inset-x-0 bottom-0 -mt-24 drop-shadow-lg">
+      <div>
+        <img src="./images/fruit1.png" alt="">
+        <p>Grape</p>
+      </div>
+      <div>
+        <img src="./images/fruit2.png" alt="">
+        <p>Orange</p>
+      </div>
+      <div>
+        <img src="./images/fruit3.png" alt="">
+        <p>Mango</p>
+      </div>
+      <div>
+        <img src="./images/fruit4.png" alt="">
+        <p>Strawberry</p>
+      </div>
+      <div>
+        <img src="./images/fruit5.png" alt="">
+        <p>Granatum</p>
+      </div>
+      
+    </div>
+   </div>
+    <!-- Banner end here -->
+  </header>
+  <main>
+
+  </main>
+  <footer>
+
+  </footer>
 </body>
 
 </html>
